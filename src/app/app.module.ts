@@ -12,7 +12,8 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserProfileComponent } from './user-profile/user-profile.component'
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AddComplaintComponent } from './add-complaint/add-complaint.component'
 
 
 const myRoute:Routes=[
@@ -35,7 +36,12 @@ const myRoute:Routes=[
   {
     path:"userprofile",
     component:UserProfileComponent
+  },
+  {
+    path:"addcomplaint",
+    component:AddComplaintComponent
   }
+
 
 
 
@@ -50,7 +56,8 @@ const myRoute:Routes=[
     UserLoginComponent,
     UserRegistrationComponent,
     DashboardComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    AddComplaintComponent
   ],
   imports: [
     BrowserModule,
