@@ -13,7 +13,8 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { AddComplaintComponent } from './add-complaint/add-complaint.component'
+import { AddComplaintComponent } from './add-complaint/add-complaint.component';
+import { ViewMyComplaintComponent } from './view-my-complaint/view-my-complaint.component'
 
 
 const myRoute:Routes=[
@@ -40,6 +41,10 @@ const myRoute:Routes=[
   {
     path:"addcomplaint",
     component:AddComplaintComponent
+  },
+  {
+    path:"viewmycomplaint",
+    component:ViewMyComplaintComponent
   }
 
 
@@ -57,7 +62,8 @@ const myRoute:Routes=[
     UserRegistrationComponent,
     DashboardComponent,
     UserProfileComponent,
-    AddComplaintComponent
+    AddComplaintComponent,
+    ViewMyComplaintComponent
   ],
   imports: [
     BrowserModule,

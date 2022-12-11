@@ -33,6 +33,6 @@ export class ApiService {
 
   getUserComplaints = (data:any)=>
   {
-    return this.http.post("http://localhost:8080/viewUserComplaint", data)
+    return this.http.post("http://localhost:8080/mycomplaint", data)
   }
 }
