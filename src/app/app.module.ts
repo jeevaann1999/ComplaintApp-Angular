@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component'
 
 
 const myRoute:Routes=[
   {
-    path:"adminlogin",
+    path:"",
     component:AdminLoginComponent
   }
 ]
@@ -19,7 +21,9 @@ const myRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    NavbarComponent,
+    NavbarAdminComponent
   ],
   imports: [
     BrowserModule,
