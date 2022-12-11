@@ -8,14 +8,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component'
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+import { UserLoginComponent } from './user-login/user-login.component'
 
 
 const myRoute:Routes=[
   {
     path:"",
     component:AdminLoginComponent
+  },
+  {
+    path:"userlogin",
+    component:UserLoginComponent
   }
+
 ]
 
 @NgModule({
@@ -23,7 +29,8 @@ const myRoute:Routes=[
     AppComponent,
     AdminLoginComponent,
     NavbarComponent,
-    NavbarAdminComponent
+    NavbarAdminComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
