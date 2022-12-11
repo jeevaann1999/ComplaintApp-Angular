@@ -22,4 +22,17 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/getUserById", data);
   }
+  addComplaint = (data:any)=>
+  {
+    return this.http.post("http://localhost:8080/addcomplaint", data)
+  }
+  getAllComplaint = ()=>
+  {
+    return this.http.get("http://localhost:8080/viewallcomplaints")
+  }
+
+  getUserComplaints = (data:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewUserComplaint", data)
+  }
 }
